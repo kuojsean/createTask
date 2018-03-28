@@ -13,14 +13,17 @@ public class MaintenanceFrame extends JFrame
 	{
 		super();
 		this.appController = appController;
-		this.appPanel = new MaintenancePanel(appController);
+		this.appPanel = new MaintenancePanel();
 		setupFrame();
 		
 	}
 	
 	private void setupFrame()
 	{
+		this.setContentPane(appPanel);
 		this.setTitle("HandymanFindr");
+		this.setSize(500, 500);
+		this.setVisible(true);
 	}
 	
 }
