@@ -11,4 +11,7 @@ import java.awt.event.ActionListener;
 public class MaintenancePanel extends JPanel
 {
 
+	private MaintenanceController appController;
+	private JButton Button;
+	
 }
