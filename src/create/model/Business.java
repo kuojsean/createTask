@@ -21,7 +21,7 @@ public abstract class Business
 	
 	public String toString()
 	{
-		String description = businessName + "\nPhone Number: " + phoneNumber + "\nPrice: " + priceRangeLow + " - " + priceRangeHigh + "\nType: " + maintenanceType + "\nHours: " + hoursOpen + "\nAddress" + address;
+		String description = businessName + "\nPhone Number: " + phoneNumber + "\nPrice: " + priceRangeLow + " - " + priceRangeHigh + "\nHours: " + hoursOpen + "\nAddress" + address;
 		return description;
 	}
 	
@@ -50,5 +50,13 @@ public abstract class Business
 		return businessName;
 	}
 	
-	public String get
+	public String getAddress()
+	{
+		return address;
+	}
+	
+	private String getHours()
+	{
+		return hoursOpen;
+	}
 }
