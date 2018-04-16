@@ -5,7 +5,7 @@ import java.util.*;
 public abstract class Business
 {
 	private int businessNumber;
-	private long phoneNumber;
+	private int phoneNumber;
 	private int priceRangeLow;
 	private int priceRangeHigh;
 	private String businessName;
@@ -51,7 +51,7 @@ public abstract class Business
 	
 	public String toString()
 	{
-		String description = businessName + "\nPhone Number: " + phoneNumber + "\nPrice: " + priceRangeLow + " - " + priceRangeHigh + "\nHours: " + hoursOpen + "\nAddress" + address;
+		String description = businessName + "\nPhone Number: (801)" +  phoneNumber +  "\nPrice: " + priceRangeLow + " - " + priceRangeHigh + "\nHours: " + hoursOpen + "\nAddress" + address;
 		return description;
 	}
 	
@@ -60,7 +60,7 @@ public abstract class Business
 		return businessNumber;
 	}
 	
-	public long getPhoneNumber()
+	public int getPhoneNumber()
 	{
 		return phoneNumber;
 	}
@@ -90,7 +90,7 @@ public abstract class Business
 		return hoursOpen;
 	}
 	
-	public void setPhoneNumber(long phoneNumber)
+	public void setPhoneNumber(int phoneNumber)
 	{
 		this.phoneNumber = phoneNumber;
 	}
